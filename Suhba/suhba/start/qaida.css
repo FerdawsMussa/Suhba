@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent-blue: #2a5298;
+  --card-gradient: linear-gradient(160deg, #0f1e3a, #122a55);
+  --text-white: #ffffff;
+  --text-gray: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100dvh;
+  background: linear-gradient(
+    to top,
+    rgba(53, 103, 185, 1),
+    rgba(10, 10, 10, 1)
+  );
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.user-pill {
+  background: var(--primary-blue);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-circle {
+  background: rgba(255, 255, 255, 0.2);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Layout */
+.lesson-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 900px;
+  padding: 40px 8%;
+  align-items: center;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Headings */
+h2 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  margin-top: 0;
+}
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.blue-text {
+  color: var(--accent-blue);
+}
+
+.lesson-desc {
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Video Player */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-buttons button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary-blue);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.navigation-buttons button:hover {
+  background: var(--accent-blue);
+}
+
+/* Episode List */
+.video-list-container {
+  width: 100%;
+}
+
+.video-card {
+  cursor: pointer;
+  background: rgba(27, 58, 109, 0.05);
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.video-card.active {
+  background: rgba(74, 144, 226, 0.2);
+  border-left: 4px solid var(--accent-blue);
+}
+
+.video-card:hover {
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.video-card span {
+  font-weight: 600;
+  color: var(--primary-blue);
+}
