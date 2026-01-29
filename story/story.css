@@ -1,0 +1,203 @@
+/* ---------- VARIABLES ---------- */
+:root {
+    --bg-dark: #050d1a;
+    --bg-gradient: radial-gradient(circle at top right, #1a2a44, #050d1a 80%);
+    --accent-blue: #254a85;
+    --text-white: #ffffff;
+    --text-muted: #b0b8c4;
+    --border-glass: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- RESET ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- BODY ---------- */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 6%;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 0%;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo .arabic {
+    height: 50px;
+    width: 50px;
+    
+}
+
+/* ---------- NAV ---------- */
+.nav-pill {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glass);
+    padding: 2px 20px;
+    border-radius: 40px;
+    display: flex;
+   gap: 22px;
+    width: 19PX;
+    margin-bottom: 2% ;
+    text-align: center;
+}
+
+.nav-pill a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--text-muted);
+    
+    
+    
+}
+
+.nav-pill a:hover {
+    color: var(--text-white);
+}
+
+/* ---------- USER ---------- */
+.user-profile {
+    background: var(--accent-blue);
+    padding: 6px 16px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.avatar {
+    background: rgba(255, 255, 255, 0.2);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- MAIN ---------- */
+main {
+    padding: 60px 15%;
+    flex: 1;
+}
+main .nav-pill {
+     padding: 0% 5% 1% 1%;
+}
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+/* ---------- TAGS ---------- */
+.tag-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    padding: 4px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* ---------- CONTENT ---------- */
+.content-body p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+/* ---------- BUTTON ---------- */
+.footer-action {
+    margin-top: 40px;
+}
+
+.button {
+    background: var(--accent-blue);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: #2e5ca5;
+}
+
+
+.button:hover {
+    background: #2e5ca5;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    main {
+        padding: 40px 8%;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .nav-pill {
+        order: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 30px 6%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .user-profile {
+        order: 2;
+    }
+}
