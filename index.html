@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suhba – Journey of Faith</title>
+<link rel="stylesheet" href="../suhba/home/home.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="../suhba/home/logo.png" alt="Suhba Logo">
+        <span class="logo-text">Suhba</span>
+    </div>
+
+    <a  id="loginBtn">Log In</a>
+</header>
+
+<main class="hero">
+    <h1>Journey of <span>Faith, Reflection and Community</span></h1>
+
+    <p>
+        Beginning the journey to Islam can feel overwhelming  full of questions,
+        emotions, and uncertainty. Suhba exists to walk that path with you.
+        Design especially for reverts and those discovering Islam,we provide clear guidance and a safe community where growth happens at
+        your own pace 
+    </p>
+
+    <div class="cta-group">
+        <a href="#" class="btn-cta btn-start" id="signupBtn">Start Your Journey</a>
+    </div>
+</main>
+<div id="modalOverlay"></div>
+
+<!-- LOGIN MODAL -->
+<section class="modal-card" id="loginCard">
+    <h2>Welcome Back!</h2>
+    <p class="subtitle">Log in to continue your journey.</p>
+
+    <form id="loginForm">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="loginEmail" placeholder="yourname@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="loginPassword" placeholder="min. 8 characters" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Log In</button>
+    </form>
+
+    <p class="footer-text">
+        Don't have an account? <a href="#" id="switchToSignup">Sign Up</a>
+    </p>
+</section>
+
+
+<section class="modal-card" id="signupCard">
+    <h2>Start Your Journey!</h2>
+    <p class="subtitle">Sign up and join our community.</p>
+
+    <form id="signupForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="signupName" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="signupEmail" placeholder="yourname@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="signupPassword" placeholder="min. 8 characters" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Sign Up</button>
+    </form>
+
+    <p class="footer-text">
+        Already have an account? <a href="#" id="switchToLogin">Log In</a>
+    </p>
+</section>
+
+<div class="container">
+        <div class="badge">Guidance, Together</div>
+
+        <div class="content-grid">
+            <div class="title-area">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="description-area">
+                <p>
+                    We are a space built to support learning, connection, and growth in faith. 
+                    Here, no one walks alone. Whether you are discovering Islam, deepening your 
+                    practice, or navigating life's challenges. Through guidance, mentorship, 
+                    and shared stories, we help every seeker feel seen, supported, and connected 
+                    to a caring community.
+                </p>
+            </div>
+        </div>
+
+        <div class="image-frame">
+            <img 
+                src="/suhba/home/about.jpg" 
+                alt="Community Prayer">
+        </div>
+
+      <div class="values-group">
+    <div class="value-card">Ihsan</div>
+    <div class="value-card">Unity</div>
+    <div class="value-card">Amanah</div>
+    <div class="value-card">Sekina</div>
+</div>
+
+    </div>
+    
+
+    <header class="hero1">
+        <div class="badge1">Your Personalized Path</div>
+        <h1>60-Day Sirat</h1>
+        <p>A carefully crafted roadmap that guides you through the essentials of Islam, from ritual practices to spiritual growth, one day at a time.</p>
+        <button class="btn-start">Start Your Journey</button>
+    </header>
+
+    <section class="card-grid">
+        <div class="card">
+            <div class="image-container">
+                <img src="suhba/home/1.jpg" alt="Foundations of Faith">
+            </div>
+            <h3>Foundations of Faith</h3>
+            <p>Understanding belief, intention, and purpose. Building clarity and confidence in why we worship and how faith fits into daily life.</p>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="/suhba/home/2.jpg" alt="Daily Practice">
+            </div>
+            <h3>Daily Practice with Ihsan</h3>
+            <p>Developing consistency in prayer, fasting, remembrance, and character, focusing on presence, sincerity, and doing small things well.</p>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="/suhba/home/3.jpg" alt="Belonging and Growth">
+            </div>
+            <h3>Belonging and Growth</h3>
+            <p>Strengthening identity, finding companionship, and learning how to live faith with balance within family, community, and the wider world.</p>
+        </div>
+    </section>
+</div>
+ <div id="hero-3">
+     <div class="badge3">Learn at Your Own Pace</div>
+     <h2>Ilm Hub</h2>
+     <p class="subtitle3">Access a curated library of Islamic resources, from urgent basics to deep spiritual knowledge.</p>
+     
+     <div class="search-container3">
+         <input type="text" id="searchInput3" placeholder="Search for topics or questions">
+         <span class="search-icon3">🔍</span>
+         <div class="result-count"></div>
+     </div>
+     
+     
+     
+     
+     <div class="grid3" id="about">
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/SUJUD.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Selah</h3>
+                 <div class="tags">
+                     
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>the daily prayers, is a moment to pause, reflect, and connect with Allah amidst the flow of life.</p>
+                 <form action="../../ilmhub/Selah.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+             </div>
+         </div>
+         
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/quran.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Quran Recitation</h3>
+                 <div class="tags">
+                     
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>The Quran is alive with guidance, mercy, and wisdom</p>
+                 <form action="../../ilmhub/qirat.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+                 
+             </div>
+         </div>
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/zikhir.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Dhikr</h3>
+                 <div class="tags">
+                     
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>Every whisper of “SubhanAllah,” “Alhamdulillah,” or “Allahu Akbar” is like a spark that illuminates the heart.</p>
+                 <form action="../../ilmhub/ZIKR.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+                 
+             </div>
+         </div>
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/map.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Prophets</h3>
+                 <div class="tags">
+                     
+                     <span class="tag">Knowledge</span>
+                 </div>
+                 <p>Prophets are Allah’s chosen guides, sent throughout history to teach faith, righteousness, and devotion.</p>
+                 <form action="../../ilmhub/propet1.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+             </div>
+         </div>
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/temr.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Sawm</h3>
+                 <div class="tags">
+                     
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>fasting during Ramadan, is a journey of patience, self-discipline, and spiritual reflection</p>
+                 <form action="../../ilmhub/sawm1.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+             </div>
+         </div>
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/zaka.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Zakah </h3>
+                 <div class="tags">
+                     
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>Zakah transforms giving into a spiritual act, purifying the heart and deepening gratitude</p>
+                 <form action="../../ilmhub/Zakah1.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+             </div>
+         </div>
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/meca.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Hajj</h3>
+                 <div class="tags">
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>the pilgrimage to Makkah, is a profound journey of faith, unity, and spiritual renewal.</p>
+                 <form action="../../ilmhub/haji1.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+             </div>
+         </div>
+         <div class="card3">
+             <div class="card-img3" style="background-image: url('../../ilmhub/sehada.jpg');"></div>
+             <div class="card-content3">
+                 <h3>Shahadah</h3>
+                 <div class="tags">
+                     <span class="tag">Growth</span>
+                     <span class="tag">Ibadah</span>
+                 </div>
+                 <p>The first pillar of Islam is the Shahadah
+                     a simple phrase that opens the heart to faith.
+                 </p>
+                 <form action="../../ilmhub/shahad1.html" method="get">
+                     <button type="submit" class="button">Read</button>
+                 </form>
+             </div>
+         </div>
+         
+     </div>
+ </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="brand-logo-container">
+                    <div class="brand-logo">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <span class="brand-name">Suhba</span>
+                </div>
+                <p class="brand-tagline">
+                    A safe, welcoming space for learning, connection, and spiritual growth.
+                </p>
+            </div>
+            <div class="footer-links-group">
+                <span class="links-title">Platform</span>
+                <ul>
+                    <li><a href="#">60-Day Sirat</a></li>
+                    <li><a href="#about">Ilm Hub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 Suhba. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../suhba/home/home.js"></script>
+</body>
+</html>
