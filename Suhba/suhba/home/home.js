@@ -111,7 +111,7 @@ loginForm.addEventListener("submit", (e) => {
   const user = users.find((u) => u.email === email && u.password === password);
 
   if (user) {
-    window.location.href = "../start/start.html";
+    window.location.href = ".../suhba/start/start.html";
     closeModals();
     loginForm.reset();
   } else {
